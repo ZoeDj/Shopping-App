@@ -13,10 +13,10 @@ class Counter extends Component {
     // this.setState(
     //   { count: this.state.count + 1 },
     //   () => {
-    //     console.log("Callback value", this.state.count);//callback function
+    //     console.log("Callback value", this.state.count);//callback function is a second agrgument
     //   }
     // );
-    // console.log(this.state.count);
+    // console.log(this.state.count); //this executes before state updates
 
     this.setState((prevState) => ({
       count: prevState.count + 1,
